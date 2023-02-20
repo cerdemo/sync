@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1650.0, 186.0, 1068.0, 874.0 ],
+		"rect" : [ 543.0, 110.0, 1068.0, 816.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"linecount" : 9,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 294.75, 587.0, 375.5, 127.0 ],
+					"text" : "TODO:\n\n-- Countdown (not related to tempo)\n--then the exp & log start:\n--fixed rec time (30s for task1)\n-- Log the Taps: start rec after countdown for fixed duration (30s)\n-- task2 is not fixed time\n\n "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 199.5, 402.860001323223059, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bubble" : 1,
 					"bubbleside" : 3,
@@ -97,7 +121,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 838.0, 575.5, 19.0, 89.0 ],
 					"size" : 3,
-					"value" : 2
+					"value" : 0
 				}
 
 			}
@@ -113,7 +137,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -577,11 +601,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-104",
-					"linecount" : 10,
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 853.183982683982549, 706.0, 150.0, 141.0 ],
+					"patching_rect" : [ 771.0, 683.059999999999945, 228.0, 114.0 ],
 					"text" : "NOTES:\n\nthis module\n--imports a MIDI file\n--plays the note according to incoming taps: every tap triggers one note in the line so pitches are fixed but rhythms depend on taps"
 				}
 
@@ -589,11 +613,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-103",
-					"linecount" : 9,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 457.0, 428.5, 150.0, 127.0 ],
+					"patching_rect" : [ 457.0, 428.5, 203.0, 100.0 ],
 					"text" : "NOTES:\n\nthis module\n--imports an audio file\n--adjust the tempo according to the Tap Tempo module\n--can loop a sample or play it once"
 				}
 
@@ -609,7 +633,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -644,6 +668,17 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 116.0, 414.0, 123.0, 22.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-7",
 									"maxclass" : "newobj",
@@ -685,7 +720,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"int" : 2,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 3,
@@ -699,7 +733,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-1",
-									"int" : 2,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 3,
@@ -927,11 +960,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-76",
-					"linecount" : 9,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.666666666666686, 602.0, 150.0, 127.0 ],
+					"patching_rect" : [ 35.166666666666686, 602.5, 191.0, 100.0 ],
 					"text" : "NOTES:\n\nthis module\n--receives taps from an interface\n--averages tempo via variable window size (default: 4)\n--adjust the global tempo"
 				}
 
@@ -948,13 +981,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 106.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1239,7 +1272,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 83.0, 131.199998676776886, 35.0, 22.0 ],
+					"patching_rect" : [ 93.666666666666686, 236.759998676776831, 35.0, 22.0 ],
 					"text" : "s trig"
 				}
 
@@ -1771,6 +1804,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-26", 0 ]
 				}
@@ -1808,16 +1848,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"order" : 0,
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"order" : 1,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -2020,7 +2051,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-36", 1 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -2028,7 +2059,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
-					"order" : 2,
+					"order" : 3,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"order" : 1,
 					"source" : [ "obj-9", 0 ]
 				}
 
