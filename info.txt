@@ -1,0 +1,74 @@
+
+Preparation:
+- Check the audio ouputs according to the sound interface 
+- Turn on the audio
+- Check the MIDI input from the drum pads
+- Check the metronome sounds and adjust accordingly
+- Proceed to the Tasks 
+
+
+##########
+##Task 1##
+##########
+
+* This task can run automatically but the experimenter must control the data recording
+
+- Turn on the task (on/off toggle)
+- Press "s" or hit on the circle (bang) to start the task
+
+-- 2 Practice Trials will run and data will be recorded automatically
+*Then,
+-- Turn off the REC (top-right)
+-- Respectively, click: 
+---- "store in array"
+---- "see the array"
+--check if everything is ok. if yes, click "reset DATA!"
+
+-- Press "s" or hit on the circle again to begin the Main experiment
+-- 10 Trials will run and data will be recorded automatically
+*Then,
+-- Turn off the REC (top-right)
+-- Respectively, click: 
+---- "store in array"
+---- "see the array"
+--check if everything is ok. if yes, click "Export to file"
+---- "Reset DATA!"
+
+*Finally
+- Turn of task 1 (toggle)
+
+
+
+
+
+##########
+##Task 2##
+##########
+
+* This task is NOT automated. The experimenter should manually proceed the steps.
+
+- Turn on the task (on/off toggle)
+- Click  on the Trial once 
+---- At this point, check the Max Console. The MIDI file paths should be printed & ready to go.
+-- Make a short test using the MIDI drum pads or pressing the keys "1" & "2" to see if everything works
+-- If yes, click the RESET button
+-- Click the REC button (top-right) to start the recording
+-- Participants begin the song whenever they want
+-- When the song is done, click the Trial button (recording may continue depending on whether you want a single or separate files for the data
+-- When 12 trials are done, click the Combo button to switch to the Combination 2 of the experiment
+-- In this combo, another 12 trials will take place
+* When all Trials and Combos are done,
+-- Turn of the REC button
+-- Respectively, click: 
+---- "store in array"
+---- "see the array"
+--check if everything is ok. if yes, click "Export to file"
+---- "Reset DATA!"
+
+
+
+
+
+#####
+#FIN#
+#####
