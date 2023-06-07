@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 100.0, 1660.0, 983.0 ],
+		"rect" : [ 34.0, 100.0, 1043.0, 828.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -76,7 +76,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-407",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -1119,7 +1118,7 @@
 					"patching_rect" : [ 114.0, 750.460008857250159, 272.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 245.707538726439225, 359.375283348560288, 270.0, 27.0 ],
-					"text" : "Participants hearing each other's tapping",
+					"text" : "Metronome fades out...",
 					"textcolor" : [ 0.964705882352941, 0.07843137254902, 0.07843137254902, 1.0 ]
 				}
 
@@ -1964,7 +1963,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-429",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -2051,7 +2049,7 @@
 					"patching_rect" : [ 2818.961213669307654, 1357.0, 273.5, 40.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 670.57696385469194, 315.248466439196875, 194.257575757575523, 25.304898112645276 ],
-					"size" : 18.0
+					"size" : 2.0
 				}
 
 			}
@@ -2193,7 +2191,7 @@
 					"fontsize" : 20.0,
 					"id" : "obj-346",
 					"maxclass" : "number",
-					"maximum" : 18,
+					"maximum" : 2,
 					"minimum" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -3945,7 +3943,7 @@
 					"cursor_size" : 3,
 					"cursor_sizeunit" : 0,
 					"cursor_visible" : 1,
-					"domain_bounds" : [ 0.0, 1.0 ],
+					"domain_bounds" : [ 0.0, 14592.427667000330985 ],
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domainruler_grid" : 0,
